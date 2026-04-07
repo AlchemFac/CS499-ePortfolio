@@ -1,63 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>CS 499 ePortfolio</title>
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CS 499 ePortfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #222;
+    }
 
+    h1, h2, h3 {
+      color: #111;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    }
+
+    a {
+      color: #0056b3;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+  </style>
+</head>
 <body>
 
-<h1>Computer Science ePortfolio</h1>
+  <h1>Juan Navarro - CS 499 Computer Science ePortfolio</h1>
 
-<p>Welcome to my CS 499 Capstone Portfolio.</p>
+  <div class="card">
+    <h2>Welcome</h2>
+    <p>
+      Welcome to my CS 499 Capstone ePortfolio. This portfolio highlights my growth throughout the
+      Computer Science program and demonstrates my skills in software design and engineering,
+      algorithms and data structures, and databases through enhancement of a Raspberry Pi thermostat artifact.
+    </p>
+  </div>
 
-<h2>Sections</h2>
+  <div class="card">
+    <h2>Portfolio Sections</h2>
+    <ul>
+      <li>Professional Self-Assessment</li>
+      <li>Software Design and Engineering Artifact</li>
+      <li><a href="thermostat/index.html">Algorithms and Data Structures Artifact</a></li>
+      <li>Database Artifact</li>
+      <li><a href="https://youtu.be/SPEAatB7BgU" target="_blank">Code Review Video</a></li>
+    </ul>
+  </div>
 
-<ul>
-<li>Professional Self Assessment</li>
-<li>Software Engineering Artifact</li>
-<li>Algorithms and Data Structures Artifact</li>
-<li>Database Artifact</li>
-<li>Code Review Video</li>
-</ul>
+  <div class="card">
+    <h2>Code Review - Thermostat Artifact</h2>
+    <p>
+      This code review evaluates a Raspberry Pi based thermostat system originally developed in CS 350.
+      The system reads temperature and humidity data from a sensor, processes the data, controls LED indicators,
+      displays output on an LCD screen, and transmits data through serial communication.
+    </p>
 
-<hr>
+    <p>
+      The review identifies limitations in the original implementation and explains the enhancements made to improve
+      system structure, maintainability, and reliability.
+    </p>
 
-<h2>Code Review – Thermostat Artifact</h2>
+    <h3>Code Review Video</h3>
+    <p>
+      <a href="https://youtu.be/SPEAatB7BgU" target="_blank">Watch the Code Review Video</a>
+    </p>
 
-<p>
-This code review evaluates a Raspberry Pi–based thermostat system developed for the CS 350 course.
-The system reads temperature and humidity data from a sensor, processes the data, controls LED indicators,
-displays output on an LCD screen, and transmits data through serial communication.
-</p>
+    <h3>Artifact Repository</h3>
+    <p>
+      <a href="https://github.com/AlchemFac/CS499-ePortfolio" target="_blank">View ePortfolio Repository</a>
+    </p>
 
-<p>
-The review identifies limitations in the original implementation and outlines
-improvements made to enhance structure, maintainability, and reliability.
-</p>
+    <h3>Key Improvements</h3>
+    <ul>
+      <li>Refactored the system into modular components</li>
+      <li>Improved separation of concerns</li>
+      <li>Stabilized system output timing</li>
+      <li>Improved serial communication handling</li>
+    </ul>
 
-<h3>Code Review Video</h3>
-<p>
-<a href="https://youtu.be/SPEAatB7BgU" target="_blank">Watch the Code Review Video</a>
-</p>
+    <h3>Revision Summary</h3>
+    <p>
+      Based on instructor feedback, the code review was refined to improve clarity, organization,
+      and alignment with the planned artifact enhancements.
+    </p>
+  </div>
 
-<h3>Artifact Repository</h3>
-<p>
-<a href="https://github.com/AlchemFac/CS499-ePortfolio" target="_blank">View ePortfolio Repository</a>
-</p>
-
-<h3>Key Improvements</h3>
-<ul>
-<li>Refactored system into modular components</li>
-<li>Improved separation of concerns</li>
-<li>Stabilized system output timing</li>
-<li>Improved serial communication handling</li>
-</ul>
-
-<h3>Revision Summary</h3>
-<p>
-Based on instructor feedback, the code review was refined to improve clarity,
-organization, and alignment with the planned enhancements for the artifact.
-</p>
+  <div class="card">
+    <h2>Algorithms and Data Structures Artifact</h2>
+    <p>
+      This artifact demonstrates how I enhanced the thermostat project by improving the way sensor data is
+      processed, organized, and evaluated over time.
+    </p>
+    <p>
+      <a href="thermostat/index.html">View the Algorithms and Data Structures Artifact</a>
+    </p>
+  </div>
 
 </body>
 </html>
