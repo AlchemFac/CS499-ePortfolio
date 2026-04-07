@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Algorithms and Data Structures Artifact</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #222;
+    }
+    h1, h2 {
+      color: #1a1a1a;
+    }
+    .section {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    }
+    a {
+      color: #0056b3;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .back {
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+  <a class="back" href="../index.html">← Back to Home</a>
+
+  <h1>Algorithms and Data Structures Enhancement</h1>
+
+  <div class="section">
+    <h2>Artifact Overview</h2>
+    <p><strong>Artifact:</strong> Raspberry Pi Thermostat Enhancement</p>
+    <p><strong>Category:</strong> Algorithms and Data Structures</p>
+    <p><strong>Summary:</strong> This artifact demonstrates how I enhanced a thermostat application by improving the way sensor data is organized, processed, and evaluated over time.</p>
+  </div>
+
+  <div class="section">
+    <h2>Enhancement Description</h2>
+    <p>
+      In the original version of the thermostat project, the system focused on reading sensor values and reacting to the current temperature. While this met the basic functional requirements, it relied on single-point readings and did not make full use of algorithms or data structures to analyze patterns in the environment.
+    </p>
+    <p>
+      In the enhanced version, I improved the handling of sensor data by organizing recent readings in a structured way and using algorithmic processing to evaluate changes over time. This allowed the system to move beyond simple immediate reactions and toward more meaningful interpretation of sensor information.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Narrative</h2>
+    <p>
+      For the algorithms and data structures component of my ePortfolio, I enhanced my original thermostat artifact by improving how sensor data is stored, processed, and evaluated over time. The original version focused mainly on reading current temperature values and reacting to them immediately. While that approach met the basic functional requirements, it did not make effective use of data structures to support deeper analysis of system behavior.
+    </p>
+    <p>
+      In the enhanced version, I implemented a sliding window approach to manage recent sensor readings. This allowed the program to calculate moving averages and observe trends instead of relying only on a single real-time reading. I selected this approach because it is efficient for handling a fixed number of recent values while discarding older values that are no longer relevant. This improved both performance and maintainability, since the structure matched the problem of tracking recent sensor activity over time.
+    </p>
+    <p>
+      I also organized sensor information into structured data elements that included values such as temperature, humidity, and timestamps. This made the code easier to read, easier to expand, and more suitable for future enhancements such as database logging and trend analysis. These changes improved the artifact by making it more reliable and more aligned with real-world software development practices.
+    </p>
+    <p>
+      This enhancement demonstrates my ability to analyze a problem, select an appropriate data structure, and apply algorithmic thinking to improve software functionality. It also reflects my growth throughout the Computer Science program in areas such as data handling, efficiency, modular design, and problem solving.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Files Included</h2>
+    <ul>
+      <li>main.py</li>
+      <li>sensor_reader.py</li>
+      <li>thermostat_controller.py</li>
+      <li>display_manager.py</li>
+      <li>led_manager.py</li>
+      <li>serial_manager.py</li>
+      <li>database_manager.py</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Source Code</h2>
+    <p>
+      <a href="https://github.com/AlchemFac/CS499-ePortfolio/tree/main/thermostat" target="_blank">
+        View the thermostat source code on GitHub
+      </a>
+    </p>
+  </div>
+
+</body>
+</html>
