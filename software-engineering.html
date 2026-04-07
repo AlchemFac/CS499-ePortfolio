@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Software Design and Engineering Artifact</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #222;
+    }
+    h1, h2 {
+      color: #1a1a1a;
+    }
+    .section {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    }
+    a {
+      color: #0056b3;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .back {
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+  <a class="back" href="index.html">← Back to Home</a>
+
+  <h1>Software Design and Engineering Enhancement</h1>
+
+  <div class="section">
+    <h2>Artifact Overview</h2>
+    <p><strong>Artifact:</strong> Raspberry Pi Thermostat Enhancement</p>
+    <p><strong>Category:</strong> Software Design and Engineering</p>
+    <p><strong>Summary:</strong> This artifact demonstrates how I improved the software design of a Raspberry Pi thermostat application by refactoring a single-file implementation into a modular, maintainable system.</p>
+  </div>
+
+  <div class="section">
+    <h2>Enhancement Description</h2>
+    <p>
+      In the original version of the thermostat project, the application logic was concentrated in one file. While the system functioned, this structure made the code harder to maintain, test, and expand. Multiple responsibilities were handled together, including sensor reading, display updates, LED control, and serial communication.
+    </p>
+    <p>
+      In the enhanced version, I redesigned the application into a modular architecture. I separated major responsibilities into dedicated components, including sensor management, LED control, display handling, serial communication, and thermostat control logic. This created a clearer structure and improved the overall organization of the codebase.
+    </p>
+    <p>
+      This enhancement made the system more maintainable and more scalable. Each module now has a more focused purpose, making future improvements easier to implement without disrupting unrelated parts of the system.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Narrative</h2>
+    <p>
+      For the software design and engineering component of my ePortfolio, I enhanced my original thermostat artifact by improving its architecture and organization. The original implementation was functional, but it relied on a more monolithic design in which several responsibilities were combined in one program. This made the code more difficult to read, maintain, and extend.
+    </p>
+    <p>
+      In the enhanced version, I applied software design principles to separate the system into multiple modules with clearly defined responsibilities. I created dedicated files for sensor reading, display management, LED control, serial communication, and thermostat control. This modular structure improved separation of concerns and made the application easier to understand and manage.
+    </p>
+    <p>
+      This redesign also improved maintainability because changes to one part of the system could be made with less risk of affecting the entire application. For example, updates to the display behavior or sensor processing could be handled in their own modules without rewriting the rest of the system. This is a stronger engineering approach because it supports reuse, testing, and future expansion.
+    </p>
+    <p>
+      Overall, this enhancement demonstrates my ability to evaluate an existing software system, identify design weaknesses, and refactor it into a more structured and maintainable solution. It reflects my growth in software design, modular programming, and professional development practices throughout the Computer Science program.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Key Files</h2>
+    <p>
+      The modular design is demonstrated through the separation of the project into files such as:
+    </p>
+    <ul>
+      <li>main.py</li>
+      <li>sensor_reader.py</li>
+      <li>display_manager.py</li>
+      <li>led_manager.py</li>
+      <li>serial_manager.py</li>
+      <li>thermostat_controller.py</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Source Code</h2>
+    <p>
+      <a href="https://github.com/AlchemFac/CS499-ePortfolio/tree/main/thermostat" target="_blank">
+        View the thermostat source code on GitHub
+      </a>
+    </p>
+  </div>
+
+</body>
+</html>
