@@ -44,16 +44,18 @@
   <div class="card">
     <h2>Overview</h2>
     <p>
-      This portfolio demonstrates my development throughout the Computer Science program.
-      It highlights my ability to design, enhance, and evaluate software systems across key areas
-      including software engineering, algorithms and data structures, and databases.
+      This portfolio demonstrates my development throughout the Computer Science program, highlighting my ability to design, analyze, and improve software systems. The work presented focuses on a Raspberry Pi–based thermostat system that was progressively enhanced across three key areas: software design and engineering, algorithms and data structures, and database integration.
+    </p>
+
+    <p>
+      Through these enhancements, I demonstrate practical experience in modular system design, real-time data processing, and persistent data management. Each section reflects my ability to evaluate existing implementations, identify limitations, and apply structured improvements that align with professional software development practices.
     </p>
   </div>
 
   <div class="card">
     <h2>Portfolio Sections</h2>
     <ul>
-      <li>Professional Self-Assessment (in progress)</li>
+      <li><strong>Professional Self-Assessment (see full section in final submission)</strong></li>
       <li><a href="software-engineering.html">Software Design and Engineering</a></li>
       <li><a href="thermostat/index.html">Algorithms and Data Structures</a></li>
       <li><a href="database.html">Databases</a></li>
@@ -63,15 +65,19 @@
 
   <div class="card">
     <h2>Software Design and Engineering Artifact Overview</h2>
+
     <p>
-      This enhancement focuses on improving the software architecture of the Raspberry Pi thermostat project.
-      The original implementation was reorganized from a more monolithic structure into a modular design with
-      dedicated components for sensor input, display handling, LED control, serial communication, and system logic.
+      The original thermostat system was implemented as a single-file program where sensor input, display handling, LED control, and system logic were tightly coupled. This structure made the code difficult to maintain, debug, and extend as additional features were introduced.
     </p>
+
     <p>
-      These changes improved maintainability, separation of concerns, and the overall quality of the application.
-      The redesign better reflects software engineering principles used in professional development environments.
+      To address these limitations, the system was refactored into a modular architecture consisting of dedicated components such as sensor_reader, thermostat_controller, display_manager, and serial_manager. Each module is responsible for a specific aspect of the system, allowing for improved separation of concerns and clearer system organization.
     </p>
+
+    <p>
+      This enhancement demonstrates key software engineering principles including modularity, abstraction, and maintainability. The redesigned system is more scalable, easier to troubleshoot, and better aligned with professional development practices.
+    </p>
+    
     <p>
       <a href="software-engineering.html">View Software Design and Engineering Enhancement</a><br>
       <a href="https://github.com/AlchemFac/CS499-ePortfolio/tree/main/thermostat" target="_blank">View Source Code</a>
@@ -79,14 +85,18 @@
   </div>
   
   <div class="card">
-    <h2>Thermostat Artifact Overview</h2>
+    <h2>Algorithms and Data Structures Artifact Overview</h2>
+
     <p>
-      This project is a Raspberry Pi–based thermostat system that reads environmental data,
-      processes sensor input, and controls output devices such as LEDs and an LCD display.
+      The original implementation relied on individual sensor readings to control system behavior, which introduced instability due to natural fluctuations in temperature and humidity data. This resulted in inconsistent responses from the thermostat.
     </p>
 
     <p>
-      The system was enhanced to improve modularity, data handling, and system stability.
+      The enhanced system incorporates a sliding window approach using a deque data structure to store recent sensor readings. This allows the system to calculate moving averages and analyze trends over time rather than reacting to isolated data points. Additionally, rate-of-change calculations were introduced to improve decision-making based on environmental changes.
+    </p>
+
+    <p>
+      These improvements produce more stable and reliable system behavior by reducing sensitivity to noise in sensor data. This enhancement demonstrates the practical application of data structures and algorithmic techniques to improve real-world system performance.
     </p>
 
     <p>
@@ -96,16 +106,19 @@
 
   <div class="card">
     <h2>Database Artifact Overview</h2>
+
     <p>
-      This enhancement focuses on improving the thermostat project by adding database functionality
-      to store sensor readings over time. The original implementation handled live temperature and
-      humidity data, but it did not preserve those readings for future use.
+      The original thermostat system processed temperature and humidity data in real time but did not retain any historical data. This limited the system’s ability to analyze trends or evaluate long-term performance.
     </p>
+
     <p>
-      By adding a database management component, the system became more effective at organizing and
-      retaining environmental data. This improvement supports persistence, long-term monitoring, and
-      future analysis of thermostat performance.
+      The enhanced system introduces persistent data storage by recording temperature, humidity, and timestamp values. This allows environmental data to be stored and retrieved over time, enabling long-term monitoring and future analysis.
     </p>
+
+    <p>
+      By incorporating a database component, the system evolves from a real-time controller into a data-driven application. This enhancement demonstrates an understanding of data persistence, organization, and the importance of storing system data for analysis, debugging, and performance evaluation.
+    </p>
+
     <p>
       <a href="database.html">View Database Enhancement</a><br>
       <a href="https://github.com/AlchemFac/CS499-ePortfolio/tree/main/thermostat" target="_blank">View Source Code</a>
@@ -114,6 +127,15 @@
 
   <div class="card">
     <h2>Code Review</h2>
+
+    <p>
+      The code review analyzes the original thermostat implementation, focusing on its structure, functionality, and limitations. It identifies key issues such as tight coupling, lack of modularity, and absence of data persistence.
+    </p>
+
+    <p>
+      The review also outlines the planned enhancements across software engineering, algorithms, and database integration, explaining how these changes improve system design, reliability, and overall performance.
+    </p>
+
     <p>
       <a href="https://youtu.be/SPEAatB7BgU" target="_blank">Watch Code Review Video</a>
     </p>
