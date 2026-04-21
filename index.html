@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CS 499 ePortfolio</title>
+  <title>Juan Navarro | Software Engineer</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -17,6 +18,17 @@
 
     h1, h2, h3 {
       color: #111;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 5px;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 30px;
     }
 
     .card {
@@ -35,136 +47,93 @@
     a:hover {
       text-decoration: underline;
     }
+
+    .links {
+      margin-top: 10px;
+    }
   </style>
 </head>
+
 <body>
 
-  <h1>Juan Navarro - Computer Science ePortfolio</h1>
+  <h1>Juan Navarro</h1>
+  <div class="subtitle">Software Engineer | Full Stack & Embedded Systems</div>
 
+  <!-- QUICK SUMMARY -->
   <div class="card">
-  <h2>Professional Self-Assessment</h2>
-
-  <p>
-    Throughout my Computer Science program, I have developed a strong foundation in designing, analyzing, and improving software systems. My coursework and hands-on projects have allowed me to move beyond theoretical concepts and apply practical solutions to real-world problems. The development and enhancement of my Raspberry Pi–based thermostat system serves as a central example of this growth, demonstrating my ability to evaluate an existing system and implement meaningful improvements across multiple areas of computer science.
-  </p>
-
-  <p>
-    I have gained valuable experience collaborating and communicating technical ideas through both written and verbal formats. Through coursework and project-based work, I have learned how to present complex systems in a clear and structured way for different audiences, including peers and non-technical stakeholders. This is reflected in my code review and artifact narratives, where I explain system behavior, identify limitations, and justify design decisions in a professional and understandable manner.
-  </p>
-
-  <p>
-    My work in algorithms and data structures is demonstrated through the implementation of efficient data handling techniques within the thermostat system. By introducing a sliding window approach using a deque, along with moving average and rate-of-change calculations, I improved the system’s ability to make stable and reliable decisions based on sensor data. In addition, my software engineering skills are reflected in the transition from a monolithic design to a modular architecture, improving maintainability, scalability, and overall system organization.
-  </p>
-
-  <p>
-    The integration of database functionality further strengthened my understanding of data persistence and system design. By storing temperature, humidity, and timestamp data, the system evolved into a more complete and data-driven application capable of supporting long-term analysis and future enhancements. I also developed an awareness of security considerations, including the importance of protecting system data, maintaining data integrity, and designing systems with reliability in mind.
-  </p>
-
-  <p>
-    Together, the artifacts in this portfolio demonstrate my ability to build and improve software systems using structured engineering practices, algorithmic problem-solving, and data management techniques. These experiences have prepared me to contribute effectively in a professional software development environment, where I can continue to build scalable, reliable, and efficient systems.
-  </p>
-  </div>
-  
-  <div class="card">
-    <h2>Overview</h2>
+    <h2>Summary</h2>
     <p>
-      This portfolio demonstrates my development throughout the Computer Science program, highlighting my ability to design, analyze, and improve software systems. The work presented focuses on a Raspberry Pi–based thermostat system that was progressively enhanced across three key areas: software design and engineering, algorithms and data structures, and database integration.
-    </p>
-
-    <p>
-      Through these enhancements, I demonstrate practical experience in modular system design, real-time data processing, and persistent data management. Each section reflects my ability to evaluate existing implementations, identify limitations, and apply structured improvements that align with professional software development practices.
+      Computer Science graduate focused on building practical systems that solve real problems. Experience includes developing a Raspberry Pi–based thermostat with real-time control logic and a full-stack MEAN application with RESTful APIs. Strong in backend development, system design, and debugging hardware/software interactions.
     </p>
   </div>
 
+  <!-- PROJECTS (MOST IMPORTANT SECTION) -->
+  <div class="card">
+    <h2>Projects</h2>
+
+    <h3>Raspberry Pi Thermostat System</h3>
+    <ul>
+      <li>Built a real-time temperature control system using Raspberry Pi, I2C sensors, and GPIO</li>
+      <li>Designed a state machine (OFF/HEAT/COOL) to manage system behavior</li>
+      <li>Refactored code into modular architecture for maintainability</li>
+      <li>Debugged hardware communication issues across I2C and GPIO</li>
+    </ul>
+    <div class="links">
+      <a href="https://github.com/AlchemFac/CS499-ePortfolio/tree/main/thermostat" target="_blank">View Code</a>
+    </div>
+
+    <h3>Full Stack Web Application (Travlr Getaways)</h3>
+    <ul>
+      <li>Built MEAN stack application with REST APIs supporting CRUD operations</li>
+      <li>Developed Angular SPA and integrated it with backend services</li>
+      <li>Structured backend using MVC architecture and modular routing</li>
+      <li>Integrated MongoDB for persistent data storage</li>
+    </ul>
+    <div class="links">
+      <a href="#">GitHub (Add Link)</a> |
+      <a href="#">Live Demo (Add Later)</a>
+    </div>
+
+    <h3>Data Dashboard (Python, Dash, MongoDB)</h3>
+    <ul>
+      <li>Built interactive dashboards using Dash and Plotly</li>
+      <li>Integrated MongoDB for dynamic data retrieval</li>
+    </ul>
+    <div class="links">
+      <a href="#">GitHub (Add Link)</a>
+    </div>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="card">
+    <h2>Technical Skills</h2>
+    <p>
+      <strong>Languages:</strong> Python, JavaScript, Java, C++, SQL<br>
+      <strong>Frameworks/Tools:</strong> Node.js, Express, Angular, MongoDB, Git, Linux<br>
+      <strong>Concepts:</strong> REST APIs, MVC, Data Structures, Algorithms
+    </p>
+  </div>
+
+  <!-- PORTFOLIO / CLASS REQUIREMENTS -->
   <div class="card">
     <h2>Portfolio Sections</h2>
     <ul>
-      <li><strong>Professional Self-Assessment (see full section in final submission)</strong></li>
       <li><a href="software-engineering.html">Software Design and Engineering</a></li>
       <li><a href="thermostat/index.html">Algorithms and Data Structures</a></li>
-      <li><a href="database.html">Databases</a></li>
+      <li><a href="database.html">Database Artifact</a></li>
       <li><a href="https://youtu.be/SPEAatB7BgU" target="_blank">Code Review Video</a></li>
     </ul>
   </div>
 
+  <!-- KEEP THIS FOR CLASS BUT LOWER PRIORITY -->
   <div class="card">
-  <h2>Software Design and Engineering Artifact Overview</h2>
-
-  <p>
-    The original thermostat system was implemented as a single-file program where sensor input, display handling, LED control, and system logic were tightly coupled. This structure made the code difficult to maintain, debug, and extend as additional features were introduced.
-  </p>
-
-  <p>
-    To address these limitations, the system was refactored into a modular architecture consisting of dedicated components such as sensor_reader, thermostat_controller, display_manager, and serial_manager. Each module is responsible for a specific aspect of the system, allowing for improved separation of concerns and clearer system organization.
-  </p>
-
-  <p>
-    This enhancement demonstrates key software engineering principles including modularity, abstraction, and maintainability. The redesigned system is more scalable, easier to troubleshoot, and better aligned with professional development practices.
-  </p>
-  
-  <p>
-    <a href="software-engineering.html">View Software Design and Engineering Enhancement</a><br>
-    <a href="https://github.com/AlchemFac/CS499-ePortfolio/tree/main/thermostat" target="_blank">View Enhanced Source Code</a><br>
-    <a href="thermostat/original/thermostat_original.py" target="_blank">
-      View Original Implementation (Single-File Version)
-    </a>
-  </p>
-  </div>
-  
-  <div class="card">
-    <h2>Algorithms and Data Structures Artifact Overview</h2>
-
+    <h2>Professional Self-Assessment</h2>
     <p>
-      The original implementation relied on individual sensor readings to control system behavior, which introduced instability due to natural fluctuations in temperature and humidity data. This resulted in inconsistent responses from the thermostat.
+      This section documents my growth throughout the Computer Science program, including my ability to design, analyze, and improve software systems. It highlights my work on enhancing a Raspberry Pi–based thermostat system through modular design, algorithmic improvements, and database integration.
     </p>
 
     <p>
-      The enhanced system incorporates a sliding window approach using a deque data structure to store recent sensor readings. This allows the system to calculate moving averages and analyze trends over time rather than reacting to isolated data points. Additionally, rate-of-change calculations were introduced to improve decision-making based on environmental changes.
-    </p>
-
-    <p>
-      These improvements produce more stable and reliable system behavior by reducing sensitivity to noise in sensor data. This enhancement demonstrates the practical application of data structures and algorithmic techniques to improve real-world system performance.
-    </p>
-
-    <p>
-      <a href="thermostat/index.html">View Algorithms and Data Structures Enhancement</a>
-    </p>
-  </div>
-
-  <div class="card">
-    <h2>Database Artifact Overview</h2>
-
-    <p>
-      The original thermostat system processed temperature and humidity data in real time but did not retain any historical data. This limited the system’s ability to analyze trends or evaluate long-term performance.
-    </p>
-
-    <p>
-      The enhanced system introduces persistent data storage by recording temperature, humidity, and timestamp values. This allows environmental data to be stored and retrieved over time, enabling long-term monitoring and future analysis.
-    </p>
-
-    <p>
-      By incorporating a database component, the system evolves from a real-time controller into a data-driven application. This enhancement demonstrates an understanding of data persistence, organization, and the importance of storing system data for analysis, debugging, and performance evaluation.
-    </p>
-
-    <p>
-      <a href="database.html">View Database Enhancement</a><br>
-      <a href="https://github.com/AlchemFac/CS499-ePortfolio/tree/main/thermostat" target="_blank">View Source Code</a>
-    </p>
-  </div>
-
-  <div class="card">
-    <h2>Code Review</h2>
-
-    <p>
-      The code review analyzes the original thermostat implementation, focusing on its structure, functionality, and limitations. It identifies key issues such as tight coupling, lack of modularity, and absence of data persistence.
-    </p>
-
-    <p>
-      The review also outlines the planned enhancements across software engineering, algorithms, and database integration, explaining how these changes improve system design, reliability, and overall performance.
-    </p>
-
-    <p>
-      <a href="https://youtu.be/SPEAatB7BgU" target="_blank">Watch Code Review Video</a>
+      The full version of this assessment is included as part of my final submission and supporting documentation.
     </p>
   </div>
 
